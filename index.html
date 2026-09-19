@@ -1,15 +1,301 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>info-portal</title>
-  </head>
-  <body>
-    <h1>privet</h1>
-    <script type="module" src="/src/main.js"></script> 
-  </body>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>DashStack Dashboard</title>
+
+    <!-- PART A CSS -->
+    <link rel="stylesheet" href="part-a.css">
+
+    <!-- PART B CSS -->
+    <link rel="stylesheet" href="part-b.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =================================
+         <!-- =========================
+     PART A — SIDEBAR + HEADER + STATS
+     ========================= -->
+
+<aside class="ds-a-sidebar">
+
+    <div class="ds-a-logo">
+        <span>Dash</span>Stack
+    </div>
+
+    <nav class="ds-a-navigation">
+
+        <a href="#" class="ds-a-nav-item active">
+            <span class="ds-a-icon">▦</span>
+            Dashboard
+        </a>
+
+        <a href="#" class="ds-a-nav-item">
+            <span class="ds-a-icon">▣</span>
+            Products
+        </a>
+
+        <a href="#" class="ds-a-nav-item">
+            <span class="ds-a-icon">☆</span>
+            Favorites
+        </a>
+
+        <a href="#" class="ds-a-nav-item">
+            <span class="ds-a-icon">✉</span>
+            Inbox
+        </a>
+
+        <a href="#" class="ds-a-nav-item">
+            <span class="ds-a-icon">☷</span>
+            Order Lists
+        </a>
+
+        <a href="#" class="ds-a-nav-item">
+            <span class="ds-a-icon">▤</span>
+            Product Stock
+        </a>
+
+
+        <div class="ds-a-section-title">
+            PAGES
+        </div>
+
+        <a href="#" class="ds-a-nav-item">Pricing</a>
+        <a href="#" class="ds-a-nav-item">Calender</a>
+        <a href="#" class="ds-a-nav-item">To-Do</a>
+        <a href="#" class="ds-a-nav-item">Contact</a>
+        <a href="#" class="ds-a-nav-item">Invoice</a>
+        <a href="#" class="ds-a-nav-item">UI Elements</a>
+        <a href="#" class="ds-a-nav-item">Team</a>
+        <a href="#" class="ds-a-nav-item">Table</a>
+
+    </nav>
+
+    <div class="ds-a-bottom-menu">
+
+        <a href="#" class="ds-a-nav-item">
+            <span class="ds-a-icon">⚙</span>
+            Settings
+        </a>
+
+        <a href="#" class="ds-a-nav-item">
+            <span class="ds-a-icon">↪</span>
+            Logout
+        </a>
+
+    </div>
+
+</aside>
+
+
+<div class="ds-a-content">
+
+    <!-- TOP HEADER -->
+
+    <header class="ds-a-header">
+
+        <div class="ds-a-search">
+            <span>⌕</span>
+            <input
+                type="text"
+                placeholder="Search"
+                id="dsASearch"
+            >
+        </div>
+
+        <div class="ds-a-header-right">
+
+            <button class="ds-a-header-button">
+                🔔
+                <span class="ds-a-notification-dot"></span>
+            </button>
+
+            <div class="ds-a-language">
+                🇬🇧
+                <span>English</span>
+                <span class="ds-a-arrow">⌄</span>
+            </div>
+
+            <div class="ds-a-profile">
+
+                <div class="ds-a-avatar">
+                    MR
+                </div>
+
+                <div class="ds-a-profile-info">
+                    <strong>Moni Roy</strong>
+                    <small>Admin</small>
+                </div>
+
+                <span>⌄</span>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- DASHBOARD -->
+
+    <section class="ds-a-dashboard">
+
+        <h1>Dashboard</h1>
+
+
+        <div class="ds-a-stat-grid">
+
+
+            <!-- CARD 1 -->
+
+            <div class="ds-a-stat-card">
+
+                <div class="ds-a-stat-text">
+
+                    <span class="ds-a-stat-label">
+                        Total User
+                    </span>
+
+                    <strong>
+                        40,689
+                    </strong>
+
+                    <small class="ds-a-positive">
+                        ↗ 8.5% Up from yesterday
+                    </small>
+
+                </div>
+
+                <div class="ds-a-stat-icon ds-a-purple">
+                    👥
+                </div>
+
+            </div>
+
+
+            <!-- CARD 2 -->
+
+            <div class="ds-a-stat-card">
+
+                <div class="ds-a-stat-text">
+
+                    <span class="ds-a-stat-label">
+                        Total Order
+                    </span>
+
+                    <strong>
+                        10293
+                    </strong>
+
+                    <small class="ds-a-positive">
+                        ↗ 1.3% Up from past week
+                    </small>
+
+                </div>
+
+                <div class="ds-a-stat-icon ds-a-yellow">
+                    ◈
+                </div>
+
+            </div>
+
+
+            <!-- CARD 3 -->
+
+            <div class="ds-a-stat-card">
+
+                <div class="ds-a-stat-text">
+
+                    <span class="ds-a-stat-label">
+                        Total Sales
+                    </span>
+
+                    <strong>
+                        $89,000
+                    </strong>
+
+                    <small class="ds-a-negative">
+                        ↘ 4.3% Down from yesterday
+                    </small>
+
+                </div>
+
+                <div class="ds-a-stat-icon ds-a-green">
+                    ↗
+                </div>
+
+            </div>
+
+
+            <!-- CARD 4 -->
+
+            <div class="ds-a-stat-card">
+
+                <div class="ds-a-stat-text">
+
+                    <span class="ds-a-stat-label">
+                        Total Pending
+                    </span>
+
+                    <strong>
+                        2040
+                    </strong>
+
+                    <small class="ds-a-positive">
+                        ↗ 1.8% Up from yesterday
+                    </small>
+
+                </div>
+
+                <div class="ds-a-stat-icon ds-a-orange">
+                    ◷
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--
+        PART B GOES HERE
+
+        НЕ УДАЛЯТЬ:
+        <div id="dashboard-part-b"></div>
+    -->
+
+</div>
+         ================================= -->
+
+    <!-- Сюда вставляется весь part-a.html -->
+
+
+    <!-- =================================
+         🟢 PART B
+         ================================= -->
+
+    <!--
+        В part-a.html есть:
+
+        <div id="dashboard-part-b"></div>
+
+        Именно вместо этого места
+        вставляется part-b.html.
+    -->
+
+
+</body>
+
 </html>
-
-
